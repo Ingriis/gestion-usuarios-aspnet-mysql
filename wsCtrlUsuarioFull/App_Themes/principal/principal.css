@@ -1,0 +1,8 @@
+/* Estilos tipográficos heredados */
+.titulo { font-family: Arial, sans-serif; font-size: x-large; font-weight: bold; color: white; }
+.tituloContenido { font-family: Arial, sans-serif; font-size: large; font-weight: bold; color: black; }
+.tituloContenidoBlanco { font-family: Arial, sans-serif; font-size: large; font-weight: bold; color: white; }
+.pie { font-family: Arial, sans-serif; font-size: medium; font-weight: normal; color: black; }
+.captura { font-family: Arial, sans-serif; font-size: small; font-weight: normal; color: black; }
+.pieNegrita { font-family: Arial, sans-serif; font-size: medium; font-weight: bold; color: black; }
+.pieImg { width: 20px; height: 20px; }

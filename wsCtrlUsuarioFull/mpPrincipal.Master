@@ -1,0 +1,69 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mpPrincipal.master.cs" Inherits="wsCtrlUsuarioFull.mpPrincipal" %>
+<!DOCTYPE html>
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestión de usuarios</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="App_Themes/principal/mpPrincipal.css?v=auth0-color" rel="stylesheet" />
+    <link href="App_Themes/principal/principal.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="console-shell">
+            <header class="console-topbar">
+                <div class="console-brand">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/imagenes/bd1.jpg" Width="38px" Height="38px" CssClass="console-logo" AlternateText="Logotipo" />
+                    <div class="console-brand-copy">
+                        <asp:Label ID="Label1" runat="server" Text="Gestión de Usuarios" CssClass="console-brand-name"></asp:Label>
+                        <span class="console-brand-caption">CONSOLA DE ADMINISTRACIÓN</span>
+                    </div>
+                </div>
+                <div class="console-account">
+                    <asp:Image ID="Image2" runat="server" Width="36px" Height="36px" ImageUrl="~/imagenes/AboutUs.gif" CssClass="console-avatar" AlternateText="Foto de perfil" />
+                    <div class="console-account-copy">
+                        <span class="console-account-caption">Sesión iniciada</span>
+                        <asp:Label ID="Label6" runat="server" Text="Usuario" CssClass="console-account-name"></asp:Label>
+                    </div>
+                    <asp:ImageButton ID="ImageButton4" runat="server" ImageUrl="~/imagenes/icons/logout.svg" AlternateText="Cerrar sesión" ToolTip="Cerrar sesión" CssClass="btn-cerrar-sesion" OnClick="ImageButton4_Click" />
+                </div>
+            </header>
+
+            <div class="console-layout">
+                <aside class="console-sidebar">
+                    <div class="sidebar-section-label">ESPACIO DE TRABAJO</div>
+                    <nav class="console-nav" aria-label="Navegación principal">
+                        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Formulario web1.aspx" CssClass="console-nav-link">
+                            <svg class="console-nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 5.5v16M8 7h8M8 11h8M8 15h5"/></svg>
+                            <span>Directorio de usuarios</span>
+                        </asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Formulario web2.aspx" CssClass="console-nav-link">
+                            <svg class="console-nav-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="4"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M19 8v6M16 11h6"/></svg>
+                            <span>Administrar usuarios</span>
+                        </asp:LinkButton>
+                    </nav>
+                    <div class="sidebar-bottom">
+                        <span class="sidebar-bottom-mark">ITP</span>
+                        <div><strong>Administración local</strong><span>Usuarios y perfiles</span></div>
+                    </div>
+                </aside>
+
+                <div class="console-workspace">
+                    <main class="console-main">
+                        <div class="area-contenido">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+                        </div>
+                    </main>
+                    <footer class="console-footer">
+                        <asp:Label ID="Label4" runat="server" Text="Sistema de gestión de usuarios" CssClass="texto-pie"></asp:Label>
+                        <span class="footer-divider">·</span>
+                        <asp:Label ID="Label5" runat="server" Text="Instituto Tecnológico de Pachuca" CssClass="texto-pie-negrita"></asp:Label>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

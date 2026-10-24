@@ -1,0 +1,26 @@
+.vs/
+[Bb]in/
+[Oo]bj/
+packages/
+*.user
+*.suo
+*.cache
+*.pdb
+*.publishsettings
+**/Properties/PublishProfiles/
+**/App_Data/*
+!**/App_Data/.gitkeep
+wsCtrlUsuarioFull/imagenes/fotos/*
+!wsCtrlUsuarioFull/imagenes/fotos/.gitkeep
+wsCtrlUsuarioFull/imagenes/uploads/*
+!wsCtrlUsuarioFull/imagenes/uploads/.gitkeep
+/apiRestCtrlUsuariosFull/Web.config
+/apiRestCtrlUsuariosFull/Web.Debug.config
+/apiRestCtrlUsuariosFull/Web.Release.config
+/wsCtrlUsuarioFull/Web.config
+/wsCtrlUsuarioFull/Web.Debug.config
+/wsCtrlUsuarioFull/Web.Release.config
+/postman/gestion-usuarios.local.postman_environment.json
+
+# Exportación local con cuentas de usuario y datos de autenticación
+/database/control_acceso.sql

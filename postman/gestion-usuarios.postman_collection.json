@@ -1,0 +1,147 @@
+{
+  "info": {
+    "_postman_id": "fb604465-fd71-412d-b718-6309b91dd63f",
+    "name": "apiRestCtrlUsuariosFull",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52067615",
+    "_collection_link": "https://go.postman.co/collection/52067615-fb604465-fd71-412d-b718-6309b91dd63f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "API de gestión de usuarios",
+      "item": [
+        {
+          "name": "spinusuario",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"nombre\":\"Nombre de prueba\",\"apellidoPaterno\":\"Apellido de prueba\",\"apellidoMaterno\":\"Segundo apellido\",\"usuario\":\"{{usuario}}\",\"contrasena\":\"{{contrasena}}\",\"ruta\":\"imagenes/fotos/avatar-demo.png\",\"tipo\":1}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/full/usuario/spinsusuario"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getusuario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/full/usuario/getusuario?id={{id}}"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "updateusuario",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"id\":\"{{id}}\",\"nombre\":\"Nombre de prueba\",\"apellidoPaterno\":\"Apellido de prueba\",\"apellidoMaterno\":\"Segundo apellido\",\"usuario\":\"{{usuario}}\",\"contrasena\":\"{{contrasena}}\",\"ruta\":\"imagenes/fotos/avatar-demo.png\",\"tipo\":1}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/full/usuario/updateusuario"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delusuario",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/full/usuario/delusuario?id={{id}}"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "vwrptusuario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/full/usuario/vwrptusuario?nombre={{nombre}}"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "vwTipoUsuario",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/full/usuario/vwTipoUsuario"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "spvalidaracceso",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"usuario\":\"{{usuario}}\",\"contrasena\":\"{{contrasena}}\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/full/usuario/spvalidaracceso"
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://localhost:44383",
+      "type": "string"
+    },
+    {
+      "key": "usuario",
+      "value": "",
+      "type": "secret"
+    },
+    {
+      "key": "contrasena",
+      "value": "",
+      "type": "secret"
+    },
+    {
+      "key": "id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "nombre",
+      "value": "",
+      "type": "string"
+    }
+  ]
+}
