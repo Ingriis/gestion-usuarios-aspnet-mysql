@@ -24,3 +24,20 @@ wsCtrlUsuarioFull/imagenes/uploads/*
 
 # Exportación local con cuentas de usuario y datos de autenticación
 /database/control_acceso.sql
+
+# Sistema operativo y archivos temporales
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.bak
+
+# Secretos y certificados privados
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
